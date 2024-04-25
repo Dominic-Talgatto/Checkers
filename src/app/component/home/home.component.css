@@ -1,0 +1,81 @@
+.center{
+  background: #f1f1ed;
+  width: 1200px;
+  height: 600px;
+  border-radius: 50px;
+  margin: 30px auto 20px;
+  box-shadow: 0 0 50px rgba(86, 162, 86, 0.55);
+}
+
+.center .text h1{
+  color: #050101;
+  font-size: 45px;
+  font-family: 'Roboto', sans-serif;
+  width: 350px;
+  margin-top: 160px;
+  margin-left: 105px;
+}
+.btn{
+  height: 70px;
+  width: 250px;
+  font-size: 29px;
+  color: #ffffff;
+  background: #5f814b;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid #aab291;
+  transition: .9s;
+  margin-left: 125px;
+  margin-top: 45px;
+}
+.btn:hover{
+  background: #254816;
+}
+.image img{
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+.center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bottom {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa; /* измените цвет фона по вашему вкусу */
+  padding: 0 0; /* добавьте отступы по желанию */
+  text-align: center; /* центрируем текст */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* добавляем тень для эффекта высоты */
+}
+
+.navbar {
+  height: 35px;
+  width: 100%;
+  background: #5f814b;
+}
+.navbar ul{
+  text-align: center;
+}
+.navbar ul li{
+  list-style: none;
+  margin: 0 29px;
+  display: inline-block;
+  line-height: 20px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  transition: .4s;
+}
+.navbar ul li a:hover{
+  background: #254816;
+  border-radius: 15px;
+}
+

@@ -1,0 +1,45 @@
+<main>
+  <section class="profile">
+    <div class="message"  >
+      Great! You have connected your Checkers!
+      <br>
+      Now you can
+      <a routerLink="/home">play </a>
+      with friends and
+      <a routerLink="/lessons">watch checkers lessons.</a>
+    </div>
+    <h1>Profile on Checkers</h1>
+
+    <h4> Player </h4>
+    <div class="player_info">
+      <p><span>Name {{name}}</span></p>
+      <p><span>email {{email}}</span></p>
+      <p><span>rating {{rating}}</span></p>
+    </div>
+  </section>
+  <section class="statistics">
+    <h1>Statistics</h1>
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Wins</th>
+          <th>Victory</th>
+          <th>Draws</th>
+          <th>Defeats</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Player </td>
+          <td>{{wins}}</td>
+          <td>{{victory}}</td>
+          <td>{{draws}}</td>
+          <td>{{defeats}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="btn" (click)="logout()">Log Out</button>
+  </section>
+</main>

@@ -1,0 +1,32 @@
+.lesson{
+  background: #f1f1ed;
+  width: 1200px;
+  height: 600px;
+  border-radius: 20px;
+  margin: 40px auto;
+  box-shadow: 0 0 50px rgba(99, 148, 94, 0.85);
+}
+.lesson h3{
+  margin-top: 12px;
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #5f814b;
+}
+.lesson iframe{
+  margin-top: 35px;
+  margin-left: 290px;
+}
+.text{
+  width: 800px;
+  margin: auto;
+  font-family:'Roboto Light', sans-serif;
+  font-size: 19px;
+}
+.level{
+  /*margin: inherit;*/
+  margin: 25px;
+  font-family:'Roboto Light', sans-serif;
+  font-size: 19px;
+}
+

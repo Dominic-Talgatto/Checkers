@@ -1,0 +1,13 @@
+<div class = "login-box">
+  <h1>Create Account</h1>
+  <form [formGroup]="form" (ngSubmit)="onSignUp()">
+    <label>Name</label>
+<!--    <input type="text" name="name" [(ngModel)]="signupObj.name" required>-->
+    <input formControlName="name" type="text" name="name" required>
+    <label>Email</label>
+    <input formControlName="email" type="email" name="email" required>
+    <label>Password</label>
+    <input formControlName="password" type="password" name="password" required>
+    <button class="submit">Submit</button>
+  </form>
+</div>

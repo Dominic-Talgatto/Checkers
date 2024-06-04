@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+  <div class="lesson" *ngIf="loaded">
+    <iframe width="660" height="315" [src]=sanitizeUrl(lesson?.video) frameborder="0" allowfullscreen></iframe>
+    <h3>{{lesson?.text}}</h3>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur doloribus eligendi impedit maxime natus optio, pariatur porro vitae voluptate! Aliquam cum dolor eaque eos facilis fugit nam sunt tempore vitae. Accusamus consequatur cumque dolorem earum expedita, ipsum magnam molestias porro repellat saepe vitae voluptatem voluptatum? Ducimus exercitationem impedit iure nesciunt perferendis reiciendis tenetur totam, veniam voluptatibus voluptatum? Accusantium asperiores beatae cumque dicta dolores eaque expedita id ipsa iure magni maxime nam nulla quas, rem repellat repudiandae sunt ullam. Adipisci, aperiam consectetur dolores dolorum ex explicabo fugiat id nesciunt obcaecati porro ratione reiciendis, sunt suscipit vel vitae. Aliquam, aspernatur, est.</p>
+    <p class="level">level: {{lesson?.level}}</p>
+  </div>
+</body>
+</html>

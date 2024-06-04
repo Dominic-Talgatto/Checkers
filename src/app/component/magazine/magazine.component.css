@@ -1,0 +1,85 @@
+.magazine_label{
+  width: 100%;
+  height: 50px;
+  background: #f3f2f2;
+}
+
+.magazine_label .min_logo{
+  margin-left: 265px;
+  line-height: 45px;
+  color: #838383;
+  text-decoration: none;
+  transition: .4s;
+  font-family: system-ui;
+  font-size: 25px;
+}
+.magazine_label ul{
+    float: right;
+  margin-right: 150px;
+}
+.magazine_label ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 25px;
+  line-height: 45px;
+}
+.magazine_label .min_logo:hover{
+  background: #143405;
+  border-radius: 15px;
+  color: white;
+}
+
+.btn{
+  color: #234b0c;
+  font-family: system-ui;
+  font-size: 21px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: .20s;
+}
+.btn:hover{
+  background: #254816;
+  color: white;
+}
+.magazine{
+  width: 850px;
+  height: 550px;
+  margin-top: 30px;
+  background: #f3f2f2;
+  border-radius: 20px;
+  transform: translate(30%, 5%);
+  box-shadow: 0 0 60px rgba(93, 140, 10, 0.85);
+}
+#type{
+  font-size: 22px;
+  float: right;
+  margin-right: 15px;
+  color: #344b05;
+  font-family: 'Roboto', sans-serif;
+}
+#name{
+  font-family: Roboto,system-ui;
+  font-size: 25px;
+  color: #3c6b38;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#name:hover{
+  color: #35b635;
+}
+#text{
+  width: 750px;
+  height:27px;
+  font-family: system-ui;
+  font-size: 18px;
+  margin: 15px;
+}
+#image{
+  width: 580px;
+  height:280px;
+  margin-left: 110px;
+  margin-top: 6em;
+}
+#date{
+  margin-top: 10px;
+}

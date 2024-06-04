@@ -1,0 +1,136 @@
+.board{
+  width: 720px;
+  height: 720px;
+  display: flex;
+  margin: auto;
+}
+.cell {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.black {
+  background-color: rgb(115, 149, 82);
+}
+.white {
+  background-color: rgb(235, 236, 208);
+}
+.piece{
+  width: 80px;
+  height: 80px;
+  /*min-width: 79px;*/
+  /*min-width: 79px;*/
+  /*margin-right: 40px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.cont-cnt {
+  width:fit-content;
+  position: absolute;
+  left: 600px;
+  top: 90px;
+}
+.cont-cnt .cnt {
+  font-size: 30px;
+  color: rgb(115, 149, 82);
+  margin-top: 45px;
+}
+.cont-alph{
+  display: flex;
+  width: fit-content;
+  position: absolute;
+  left: 555px;
+  top: 794px;
+}
+.cont-alph .alph {
+  font-size: 30px;
+  color: rgb(115, 149, 82);
+  margin-left: 76px;
+}
+.cont-cnt .colorwhite.cnt{
+  color: rgb(235, 236, 208);
+}
+.cont-alph .alph.colorwhite{
+  color: rgb(235, 236, 208);
+}
+.player {
+  display: flex;
+  width: 720px;
+  margin: auto;
+  justify-content:space-between;
+}
+.name-score {
+  margin-left: 30px;
+}
+.name {
+  font-size: 20px;
+  font-weight:600;
+}
+.rating {
+  font-size: 18px;
+  font-weight:400;
+}
+.score {
+  width: fit-content;
+  margin: auto;
+  font-size: 17px;
+  font-weight: bold;
+}
+.time {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Align items vertically */
+  margin-right: 20px;
+}
+.timer {
+  font-size: 24px;
+  /* height: 100%; */
+}
+.svg {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Add margin to create space between the SVG and the timer */
+  background: url("https://banner2.cleanpng.com/20180413/xfq/kisspng-timer-clock-stopwatch-clip-art-stopwatch-5ad093bb575145.8327485915236187473577.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: black;
+}
+.after-game{
+  position: absolute;
+  top: 540px;
+  left: 960px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(30, 29, 26);
+  text-align: center;
+  width: fit-content;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-radius: 40px;
+  /* display: none; */
+}
+.won-player-name{
+  font-size: 32px;
+  color: white;
+}
+
+.btn{
+  height: 55px;
+  width: 200px;
+  font-size: 29px;
+  color: #ffffff;
+  background: #5f814b;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid #aab291;
+  transition: .9s;
+  margin-top: 20px;
+  margin: 10px;
+}
+.btn:hover{
+  background: #254816;
+}

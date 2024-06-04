@@ -1,0 +1,15 @@
+
+<div class="wrapper">
+  <nav class="navbar">
+    <a class="logo" routerLink="/home">Checkers! </a>
+    <ul>
+      <li *ngIf="logged"><a class="active" routerLink="/play">Play</a></li>
+      <li><a routerLink="/magazine">Magazine</a></li>
+      <li><a routerLink="/lessons">Lessons</a></li>
+      <li *ngIf="!logged"><a routerLink="/signIn">Sign in</a></li>
+      <li *ngIf="logged"><a routerLink="/profile">Profile</a></li>
+      <li *ngIf="logged"><a (click)="logout()" routerLink="/home">LogOut</a></li>
+    </ul>
+  </nav>
+</div>
+<router-outlet></router-outlet>

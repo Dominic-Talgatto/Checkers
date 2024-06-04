@@ -1,0 +1,19 @@
+<div class="magazine_label">
+  <a class="min_logo" href="#">Checkers magazine</a>
+  <ul>
+    <li><button class="btn" (click)="setType('news')">News & events</button></li>
+    <li><button class="btn" (click)="setType('game')">Secrets of the game</button></li>
+    <li><button class="btn" (click)="setType('history')">Draughts history</button></li>
+  </ul>
+</div>
+<div>
+  <ul>
+    <ol class="magazine" *ngFor="let mag of filteredMagazines">
+        <a href="#" id="name">{{mag.name}}</a>
+        <p id="type">{{mag.type}}</p>
+        <p id="text">{{mag.text}}</p>
+        <img id='image'[src]="mag.picture" alt="picture">
+        <p id="date">Updated at: {{mag.date}}</p>
+    </ol>
+  </ul>
+</div>

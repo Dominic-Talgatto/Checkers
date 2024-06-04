@@ -1,0 +1,13 @@
+ <div class="message2">
+    <h3>Checkers & draughts lessons</h3>
+    <p> Want to improve your skills quickly? </p>
+    <p>  Thanks to our video lessons you will learn how to play American Checkers and International Draughts
+     and how to win at any level from the beginner to the master</p>
+  </div>
+  <ul *ngIf="loaded">
+    <ol class="lessons" *ngFor="let lesson of lessons">
+      <a class="name" routerLink="/lessons/{{lesson.id}}">{{ lesson.name }}</a>
+      <p class="text">{{lesson.text}}</p>
+      <p class="level">level: {{lesson.level}}</p>
+    </ol>
+  </ul>

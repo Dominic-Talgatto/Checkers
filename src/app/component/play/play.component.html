@@ -1,0 +1,58 @@
+<div class="player player1">
+  <div class="name-score">
+    <div class="name">Friend</div>
+    <div class="score">{{scoreBlack}}</div>
+  </div>
+  <div class="time">
+    <div class="svg" ></div>
+    <div class="timer">3:00</div>
+  </div>
+</div>
+
+<div class="cont-cnt">
+  <div class="cnt" *ngFor="let r of [8, 7, 6, 5, 4, 3, 2, 1]" [class.colorwhite] = "(r % 2) == 1">
+    {{r}}
+  </div>
+</div>
+
+<div class="board" cdkDropListGroup>
+  <div *ngFor="let r of [0, 1, 2, 3, 4, 5, 6, 7]">
+    <div class="cell" *ngFor="let c of [0, 1, 2, 3, 4, 5, 6, 7]" [class.black] = "(r + c) % 2 == 1"
+         [class.white] = "(r + c) % 2 != 1" cdkDropList (cdkDropListDropped) = move($event)
+         [cdkDropListData] = "{row: c, col: r}">
+
+
+      <div [ngStyle]="{'background-image': 'url(' + displayPiece(c, r) + ')'}" class="piece"
+           cdkDrag [cdkDragData]="{row: c, col: r}">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cont-alph">
+  <div class="alph" *ngFor="let r of ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']; let i = index;" [class.colorwhite] = "(i % 2) == 0">
+    {{r}}
+  </div>
+</div>
+
+<div class="player player2">
+  <div class="name-score">
+    <div class="name">{{name}}  (<span class="rating">{{rating}}</span>)</div>
+    <div class="score">{{scoreWhite}}</div>
+  </div>
+  <div class="time">
+    <div class="svg"></div>
+    <div class="timer">3: 00</div>
+  </div>
+</div>
+
+<div class="after-game"  *ngIf="gameOverBool">
+  <div class="won-player">
+    <p class="won-player-name">{{gameOverString}}</p>
+  </div>
+  <div class="buttons">
+    <button class="btn"  routerLink="/home">Home</button>
+    <button class="btn"  (click)="reloadPage()">Rematch</button>
+  </div>
+</div>
+<!--// *ngIf="gameOverBool"-->

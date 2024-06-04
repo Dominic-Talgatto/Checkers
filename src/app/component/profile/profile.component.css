@@ -1,0 +1,107 @@
+.profile{
+  background: #f1f1ed;
+  width: 800px;
+  border-radius: 20px;
+  margin: 80px auto;
+  padding: 15px;
+  /*margin-bottom: 50px;*/
+  box-shadow: 0 4px 90px rgb(10, 98, 13);
+}
+.message{
+  width: 420px;
+  height: 50px;
+  background: #d7dcb9;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 10px;
+  font-family: system-ui;
+}
+.message a{
+  text-decoration: none;
+  color: #56754f;
+}
+.profile h1{
+  font-size: 30px;
+  font-family: system-ui;
+  color: #333333;
+  margin-left: 225px;
+}
+.profile h4{
+  font-size: 30px;
+  font-family: system-ui;
+  color: #333333;
+  margin-left: 45px;
+
+}
+.player_info p{
+  font-family: system-ui;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.statistics{
+  background: #f1f1ed;
+  width: 800px;
+  height: 290px;
+  border-radius: 20px;
+  margin: 30px auto;
+  box-shadow: 0 0 20px rgb(10, 98, 13);
+}
+
+.statistics h1{
+  font-size: 30px;
+  font-family: system-ui;
+  color: #333333;
+  margin-left: 295px;
+}
+
+.content-table{
+  border-collapse: collapse;
+  margin: 35px 165px 25px;
+  font-size: 1.3em;
+  min-width: 400px;
+  border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
+}
+.content-table thead tr{
+  background: #5f814b;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+.content-table th,
+.content-table td{
+  padding: 12px 15px;
+  font-family: system-ui;
+}
+
+.content-table tbody tr{
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr last-of-typ {
+  border-bottom: 2px solid #7a7a05;
+}
+
+.btn {
+  width: 150px;
+  height: 45px;
+  background-color: #5f814b;
+  color: white;
+  margin-left: 295px ;
+  border: 2px #333333;
+}
+.btn:hover{
+  background: #254816;
+}
+.error{
+  font-size: 15px;
+  font-family: system-ui;
+  color: #333333;
+  margin-left: 35px;
+}
+
+
+
